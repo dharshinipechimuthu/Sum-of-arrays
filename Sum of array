@@ -1,0 +1,33 @@
+# Sum-of-arrays
+import java.util.Scanner;
+
+public class SumOfArray {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+        System.out.println("Enter " + size + " elements:");
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
+        }
+        int sum = 0;
+        for (int i = 0; i < size; i++) {
+            sum += array[i];
+        }
+        System.out.println("Sum of the array elements: " + sum);
+        scanner.close();
+    }
+}
+
+Output:
+
+Enter the size of the array: 5
+Enter 5 elements:
+10
+20
+30
+40
+50
+
+Sum of the array elements: 150
